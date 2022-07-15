@@ -59,7 +59,7 @@ const Cards = () => {
       postcode: value.postcode,
       tz: value.tz,
       td: value.td,
-      display: "block"
+      display: "flex"
     });
   }
   if (error) {
@@ -70,7 +70,7 @@ const Cards = () => {
     // console.log(items.results);
 
     return (
-      <>
+      <div className="allCards">
         <BigCard
           fname={big.fname}
           imgURL={big.url}
@@ -85,11 +85,15 @@ const Cards = () => {
           tz={big.tz}
           td={big.td}
           display={big.display}
+          gender={big.gender}
         />
         <div className="cards">
           {items.results.map((item,index) => (
+            
             <SingleCard
+            
               key={index}
+              id={index}
               gender={item.gender}
               fname={item.name.first}
               lname={item.name.last}
@@ -109,7 +113,7 @@ const Cards = () => {
             />
           ))}
         </div>
-      </>
+      </div>
     );
   }
 };

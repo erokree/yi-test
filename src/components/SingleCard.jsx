@@ -5,9 +5,9 @@ const SingleCard = (props) => {
     <div className="scard" onClick={() => {
       props.big(props);}
     }>
-      <div>{props.gender} . {props.nat} </div>
-      <div>{props.title} {props.fname} {props.lname}</div>
-      <div>{props.email}</div>
+      <div className="gender" id="nat">{props.gender} . {props.nat} </div>
+      <div className="cardName">{props.title} {props.fname} {props.lname}</div>
+      <div className="mail">{props.email}</div>
       
     </div>
   );

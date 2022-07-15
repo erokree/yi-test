@@ -1,7 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   margin: 0;
   padding: 0;
   background: #e5e5e5;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
+}
+.heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 145%;
+  /* identical to box height, or 35px */
+
+  color: #000000;
+}
+.tabs ul{
+  display: flex;
+  list-style: none;
+  
+}
+.tabs ul li{
+  padding: 0px 24px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 150%;
+}
+.tabs ul li:hover{
+  cursor: pointer;
+}
+.allCards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bigCard{
+  align-items: center;
+  justify-content: space-around;
+  width: 996px;
+  height: 291px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .bigCard {
+   flex-direction: column;
+   width: 556px;
+   height: 400px;
+  }
+
+}
+
+.bigName{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 100%;
+
+letter-spacing: -1.85px;
+text-decoration-line: underline;
+
+color: #E16259;
+text-decoration-thickness: 3px;
+}
+.image{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.image img{
+  border-radius: 120px;
+}
+.description{
+  width:70%;
+}
+.address{
+  font-family: 'Roboto';
+font-style: normal;
+font-size: 20px;
+
+}
+#sn{
+  color: #A259FF;
+  font-weight: 700;
+}
+#countryName{
+font-weight: 700;
+
+}
+.gender{
+  color: #8A8A8A;
 }
 .cards {
   width: 100%;
@@ -30,11 +130,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-around;
   padding: 12px 16px;
   gap: 8px;
   width: 282px;
   height: 110px;
-
+  font-family: 'Roboto';
+  font-style: normal;
   background: #ffffff;
   /* Medium Shadow */
 
@@ -45,4 +147,27 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: transform .3s ease-out;
+}
+.scard:hover{
+  cursor: pointer;
+  box-shadow: 8px 12px 17px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -5px);
+
+}
+#nat{
+  font-size: 14px;
+}
+.cardName{
+  
+font-weight: 700;
+font-size: 22px;
+line-height: 135%;
+}
+.mail{
+  font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+color: #E16259;
+
 }

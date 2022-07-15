@@ -3,7 +3,7 @@ import Heading from './Heading'
 import Navbar from './Navbar'
 const Header = () => {
   return (
-    <div><Heading />
+    <div className='header'><Heading />
     <Navbar />
     </div>
   )
